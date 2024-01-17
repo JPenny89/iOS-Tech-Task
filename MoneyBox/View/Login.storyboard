@@ -43,7 +43,7 @@
                                 <rect key="frame" x="116" y="352" width="205" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85P-Q4-7X4">
                                 <rect key="frame" x="159" y="622" width="75" height="35"/>
@@ -72,7 +72,7 @@
         <!--AccountsSummaryView-->
         <scene sceneID="ujP-Op-rSY">
             <objects>
-                <viewController title="AccountsSummaryView" id="kyO-cV-p4i" customClass="AccountsSummaryViewController" customModule="MoneyBox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountsSummaryView" title="AccountsSummaryView" id="kyO-cV-p4i" customClass="AccountsSummaryViewController" customModule="MoneyBox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haZ-Dy-ZuR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
