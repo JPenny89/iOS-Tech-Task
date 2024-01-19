@@ -130,7 +130,6 @@
                                             <outlet property="accountName" destination="cnf-DX-8kd" id="jSI-Qd-4gY"/>
                                             <outlet property="moneyboxValue" destination="tYZ-FK-rpe" id="SyX-m7-hEc"/>
                                             <outlet property="planValue" destination="7c2-dC-Cyn" id="oaG-sJ-17t"/>
-                                            <segue destination="fCl-yO-qk2" kind="presentation" id="m23-CT-XNi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -164,21 +163,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jV-xB-kFF" userLabel="Account Name">
-                                <rect key="frame" x="53" y="141" width="42" height="21"/>
+                                <rect key="frame" x="53" y="141" width="300" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ1-Ax-927" userLabel="Plan Value">
-                                <rect key="frame" x="53" y="201" width="42" height="21"/>
+                                <rect key="frame" x="53" y="201" width="300" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzY-5P-xEx" userLabel="Moneybox Value">
-                                <rect key="frame" x="53" y="267" width="42" height="21"/>
+                                <rect key="frame" x="53" y="267" width="300" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -207,9 +206,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="accountName" destination="4jV-xB-kFF" id="P3o-kk-IK6"/>
-                        <outlet property="moneyboxValue" destination="zzY-5P-xEx" id="vhm-04-eXV"/>
-                        <outlet property="planValue" destination="lQ1-Ax-927" id="2fH-6k-Nzt"/>
+                        <outlet property="accountNameLabel" destination="4jV-xB-kFF" id="I8B-2s-twf"/>
+                        <outlet property="moneyboxValueLabel" destination="zzY-5P-xEx" id="JPM-c8-GXe"/>
+                        <outlet property="planValueLabel" destination="lQ1-Ax-927" id="AIc-Zw-ILR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5t-Rg-zwj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -217,9 +216,6 @@
             <point key="canvasLocation" x="3657" y="13"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="6qv-7I-CY9"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

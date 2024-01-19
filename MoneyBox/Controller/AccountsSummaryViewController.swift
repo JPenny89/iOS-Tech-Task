@@ -17,9 +17,9 @@ class AccountsSummaryViewController: UIViewController {
     
     var products: [ProductResponse] = []
     let dataProvider = DataProvider()
-    
     var accounts: [Account] = []
     var planValue: Double?
+    
     
     //    override func viewWillAppear(_ animated: Bool) {
     //        super.viewWillAppear(animated)
@@ -65,6 +65,13 @@ class AccountsSummaryViewController: UIViewController {
         //TODO: show error
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAccount" {
+            let destinationVC = segue.destination as! AccountDetailsViewController
+            let product = sender as! ProductResponse
+            destinationVC.product = product
+        }
+    }
 }
 
 extension AccountsSummaryViewController: UITableViewDelegate, UITableViewDataSource {
@@ -92,7 +99,7 @@ extension AccountsSummaryViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "goToAccount", sender: self)
+        let product = products[indexPath.row]
+        performSegue(withIdentifier: "goToAccount", sender: product)
     }
 }
