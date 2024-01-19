@@ -17,10 +17,8 @@ class AccountDetailsViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    
     @IBAction func increaseBalance(_ sender: UIButton) {
     }
-    
     
     @IBAction func dismissView(_ sender: UIButton) {
     }

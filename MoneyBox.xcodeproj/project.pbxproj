@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632C2CD72B5AC06400549018 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C2CD62B5AC06400549018 /* AccountTableViewCell.swift */; };
 		63B53DBB2B58476B00886BF3 /* AccountsSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBA2B58476B00886BF3 /* AccountsSummaryViewController.swift */; };
 		63B53DBD2B58489400886BF3 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBC2B58489400886BF3 /* AccountDetailsViewController.swift */; };
-		63B53DBF2B5848A400886BF3 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBE2B5848A400886BF3 /* AccountTableViewCell.swift */; };
+		63B53DBF2B5848A400886BF3 /* AccountTableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBE2B5848A400886BF3 /* AccountTableViewCellController.swift */; };
 		63B53DC12B584E1900886BF3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DC02B584E1900886BF3 /* User.swift */; };
 		B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228EA692880B30B00B35F16 /* LoginViewController.swift */; };
 		B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Login.storyboard */; };
@@ -33,9 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		632C2CD62B5AC06400549018 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		63B53DBA2B58476B00886BF3 /* AccountsSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsSummaryViewController.swift; sourceTree = "<group>"; };
 		63B53DBC2B58489400886BF3 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
-		63B53DBE2B5848A400886BF3 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		63B53DBE2B5848A400886BF3 /* AccountTableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCellController.swift; sourceTree = "<group>"; };
 		63B53DC02B584E1900886BF3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B228EA692880B30B00B35F16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B228EA6A2880B30B00B35F16 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				63B53DC02B584E1900886BF3 /* User.swift */,
+				632C2CD62B5AC06400549018 /* AccountTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,7 +96,7 @@
 				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
 				63B53DBA2B58476B00886BF3 /* AccountsSummaryViewController.swift */,
 				63B53DBC2B58489400886BF3 /* AccountDetailsViewController.swift */,
-				63B53DBE2B5848A400886BF3 /* AccountTableViewCell.swift */,
+				63B53DBE2B5848A400886BF3 /* AccountTableViewCellController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,7 +279,8 @@
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
 				63B53DC12B584E1900886BF3 /* User.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
-				63B53DBF2B5848A400886BF3 /* AccountTableViewCell.swift in Sources */,
+				632C2CD72B5AC06400549018 /* AccountTableViewCell.swift in Sources */,
+				63B53DBF2B5848A400886BF3 /* AccountTableViewCellController.swift in Sources */,
 				63B53DBD2B58489400886BF3 /* AccountDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
