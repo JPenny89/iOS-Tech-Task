@@ -10,30 +10,22 @@ import Networking
 
 class AccountsSummaryViewController: UIViewController {
     
-    
-    @IBOutlet weak var greetingLabel: UILabel!
-    @IBOutlet weak var totalPlanValue: UILabel!
-    @IBOutlet weak var accountsSummaryTableView: UITableView!
-    
     var products: [ProductResponse] = []
     let dataProvider = DataProvider()
     var accounts: [Account] = []
     var planValue: Double?
+    let brandColour = UIColor(named: "AccentColor")
     
-    
-    //    override func viewWillAppear(_ animated: Bool) {
-    //        super.viewWillAppear(animated)
-    //        navigationController?.isNavigationBarHidden = true
-    //    }
+    @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var totalPlanValue: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         fetchAccounts()
-        accountsSummaryTableView.dataSource = self
-        accountsSummaryTableView.delegate = self
-        
-        //        greetingLabel.textColor = brandColour
+        tableView.dataSource = self
+        tableView.delegate = self
+        greetingLabel.textColor = brandColour
         
     }
     
@@ -58,21 +50,34 @@ class AccountsSummaryViewController: UIViewController {
     //MARK: - Do these need to go into an Extension?
     
     func didFetchAccounts() {
-        accountsSummaryTableView.reloadData()
+        tableView.reloadData()
     }
     
     func failedToFetchAccounts() {
-        //TODO: show error
+        // handle error
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToAccount" {
-            let destinationVC = segue.destination as! AccountDetailsViewController
-            let product = sender as! ProductResponse
-            destinationVC.product = product
+        if segue.identifier == "goToAccount",
+           let destinationVC = segue.destination as? AccountDetailsViewController,
+           let selectedIndexPath = tableView.indexPathForSelectedRow {
+            destinationVC.product = products[selectedIndexPath.row]
+            destinationVC.delegate = self
+        }
+    }
+    
+    @IBAction func logoutPressed(_ sender: UIButton) {
+        let destination = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginView") as! LoginViewController
+        let navigationVC = UINavigationController(rootViewController: destination)
+        if let app = UIApplication.shared.delegate as? AppDelegate, let window = app.window {
+            DispatchQueue.main.async {
+                window.rootViewController = navigationVC
+            }
         }
     }
 }
+
+//MARK: - Extensions
 
 extension AccountsSummaryViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -89,7 +94,6 @@ extension AccountsSummaryViewController: UITableViewDelegate, UITableViewDataSou
         else {
             fatalError("AccountTableViewCellController not configured correctly.")
         }
-        
         let account = products[indexPath.row]
         let viewModel = AccountTableViewCell(account: account.product?.friendlyName, planValue: account.planValue, moneyboxValue: account.moneybox)
         cell.planValue.text = String(format: "Plan Value: £%.2f", viewModel.planValue ?? 0.0)
@@ -98,8 +102,19 @@ extension AccountsSummaryViewController: UITableViewDelegate, UITableViewDataSou
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ accountsSummaryTableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let product = products[indexPath.row]
         performSegue(withIdentifier: "goToAccount", sender: product)
+    }
+}
+
+extension AccountsSummaryViewController: AccountDetailsViewControllerDelegate {
+    
+    func accountDetailsViewControllerUpdated(_ updatedAccount: ProductResponse) {
+        if let index = products.firstIndex(where: { $0.id == updatedAccount.id }) {
+            products[index] = updatedAccount
+            print("updatedAccount = \(updatedAccount)")
+        }
+        fetchAccounts()
     }
 }

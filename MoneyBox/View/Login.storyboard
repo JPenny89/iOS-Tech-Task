@@ -28,7 +28,7 @@
         <!--LoginView-->
         <scene sceneID="v1p-fd-GfA">
             <objects>
-                <viewController title="LoginView" id="qxb-1x-RiR" customClass="LoginViewController" customModule="MoneyBox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginView" title="LoginView" id="qxb-1x-RiR" customClass="LoginViewController" customModule="MoneyBox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HFG-xW-2Zb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,10 +46,10 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85P-Q4-7X4">
-                                <rect key="frame" x="159" y="622" width="75" height="35"/>
+                                <rect key="frame" x="164" y="622" width="66" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
                                     <action selector="loginPressed:" destination="qxb-1x-RiR" eventType="touchUpInside" id="ccT-TI-cvc"/>
                                 </connections>
@@ -142,10 +142,24 @@
                         <viewLayoutGuide key="safeArea" id="uIm-bW-4zF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6AP-ax-fij"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6AP-ax-fij">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="qeN-Tt-BBJ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SZX-E8-6AL">
+                                <rect key="frame" x="338" y="141" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="kyO-cV-p4i" eventType="touchUpInside" id="Jnl-BA-oDS"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="accountsSummaryTableView" destination="whJ-Ef-gJf" id="M4q-0A-Ibb"/>
                         <outlet property="greetingLabel" destination="s08-Rj-kta" id="cGF-tk-J2K"/>
+                        <outlet property="tableView" destination="whJ-Ef-gJf" id="ias-GO-1Uj"/>
                         <outlet property="totalPlanValue" destination="aM3-2e-y0f" id="Vsj-yD-NuD"/>
                         <segue destination="fCl-yO-qk2" kind="presentation" identifier="goToAccount" id="6qv-7I-CY9"/>
                     </connections>

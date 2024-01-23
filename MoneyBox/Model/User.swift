@@ -16,5 +16,4 @@ class UserService {
     static let shared = UserService()
     var user: User?
     private init() {}
-    
 }
