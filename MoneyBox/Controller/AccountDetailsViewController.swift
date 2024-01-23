@@ -44,7 +44,7 @@ class AccountDetailsViewController: UIViewController {
         }
     }
     
-    func addMoney(to product: ProductResponse) {
+    private func addMoney(to product: ProductResponse) {
         guard let productId = product.id
         else {
             print("productId missing")
@@ -67,11 +67,11 @@ class AccountDetailsViewController: UIViewController {
         }
     }
     
-    func successfullyAdded(moneybox: Double) {
+    private func successfullyAdded(moneybox: Double) {
         moneyboxValueLabel.text = String(format: "Moneybox: £%.2f", moneybox)
     }
     
-    func failedAddingMoney() {
+    private func failedAddingMoney() {
         // handle error
     }
     
