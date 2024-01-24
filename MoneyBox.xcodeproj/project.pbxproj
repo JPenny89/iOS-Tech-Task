@@ -14,6 +14,9 @@
 		63B53DBD2B58489400886BF3 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBC2B58489400886BF3 /* AccountDetailsViewController.swift */; };
 		63B53DBF2B5848A400886BF3 /* AccountTableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBE2B5848A400886BF3 /* AccountTableViewCellController.swift */; };
 		63B53DC12B584E1900886BF3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DC02B584E1900886BF3 /* User.swift */; };
+		63CE8E572B61474B00F53C54 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE8E562B61474B00F53C54 /* LoginViewModel.swift */; };
+		63FCBD642B612E82003045E4 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBD632B612E81003045E4 /* Colour.swift */; };
+		63FCBD672B6133C0003045E4 /* ButtonModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBD662B6133C0003045E4 /* ButtonModifiers.swift */; };
 		B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228EA692880B30B00B35F16 /* LoginViewController.swift */; };
 		B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Login.storyboard */; };
 		B26EF47828881E7F003BFDF2 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B26EF47728881E7F003BFDF2 /* Networking */; };
@@ -43,6 +46,9 @@
 		63B53DBC2B58489400886BF3 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		63B53DBE2B5848A400886BF3 /* AccountTableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCellController.swift; sourceTree = "<group>"; };
 		63B53DC02B584E1900886BF3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63CE8E562B61474B00F53C54 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		63FCBD632B612E81003045E4 /* Colour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
+		63FCBD662B6133C0003045E4 /* ButtonModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiers.swift; sourceTree = "<group>"; };
 		B228EA692880B30B00B35F16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B228EA6A2880B30B00B35F16 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B24EED92288ED5740016C233 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 			children = (
 				632C2CD62B5AC06400549018 /* AccountTableViewCell.swift */,
 				63B53DC02B584E1900886BF3 /* User.swift */,
+				63FCBD632B612E81003045E4 /* Colour.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +130,22 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		63CE8E552B61472E00F53C54 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63CE8E562B61474B00F53C54 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63FCBD652B613381003045E4 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				63FCBD662B6133C0003045E4 /* ButtonModifiers.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		B2CA46BF279350880041B3A5 = {
 			isa = PBXGroup;
 			children = (
@@ -146,9 +169,11 @@
 		B2CA46CA279350880041B3A5 /* MoneyBox */ = {
 			isa = PBXGroup;
 			children = (
+				63CE8E552B61472E00F53C54 /* ViewModel */,
 				63B53DB82B5846AB00886BF3 /* Controller */,
 				63B53DB62B58469C00886BF3 /* Model */,
 				63B53DB72B5846A400886BF3 /* View */,
+				63FCBD652B613381003045E4 /* ViewModifiers */,
 				B2CA46D42793508A0041B3A5 /* Assets.xcassets */,
 				B2CA46D92793508A0041B3A5 /* Info.plist */,
 			);
@@ -292,9 +317,12 @@
 				632F90D62B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift in Sources */,
 				63B53DBB2B58476B00886BF3 /* AccountsSummaryViewController.swift in Sources */,
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
+				63FCBD672B6133C0003045E4 /* ButtonModifiers.swift in Sources */,
 				632F90D82B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift in Sources */,
 				63B53DC12B584E1900886BF3 /* User.swift in Sources */,
+				63FCBD642B612E82003045E4 /* Colour.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
+				63CE8E572B61474B00F53C54 /* LoginViewModel.swift in Sources */,
 				632C2CD72B5AC06400549018 /* AccountTableViewCell.swift in Sources */,
 				63B53DBF2B5848A400886BF3 /* AccountTableViewCellController.swift in Sources */,
 				63B53DBD2B58489400886BF3 /* AccountDetailsViewController.swift in Sources */,

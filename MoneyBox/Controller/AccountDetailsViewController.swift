@@ -17,6 +17,7 @@ class AccountDetailsViewController: UIViewController {
     @IBOutlet weak var accountNameLabel: UILabel!
     @IBOutlet weak var planValueLabel: UILabel!
     @IBOutlet weak var moneyboxValueLabel: UILabel!
+    @IBOutlet weak var UIView: UIView!
     
     var product: ProductResponse?
     let dataProvider = DataProvider()
@@ -28,6 +29,9 @@ class AccountDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIView.backgroundColor = Colour.GreyColour
+        accountNameLabel.textColor = Colour.AccentColour
+        
         guard let product = product else { return }
         accountNameLabel.text = product.product?.friendlyName
         if let planValue = product.planValue {

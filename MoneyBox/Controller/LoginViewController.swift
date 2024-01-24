@@ -10,9 +10,22 @@ import Networking
 
 class LoginViewController: UIViewController {
     
+//    private var viewModel = LoginViewModel(dataProvider: DataProvider())
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        emailTextField.backgroundColor = Colour.GreyColour
+        passwordTextField.backgroundColor = Colour.GreyColour
+    }
+    
     @IBAction func loginPressed(_ sender: UIButton) {
+        
+        
+//        viewModel.login()
+        
         guard let email = emailTextField.text,
               !email.isEmpty else {
             //            display an error alert
