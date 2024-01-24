@@ -15,6 +15,9 @@ class AccountTableViewCellController: UITableViewCell {
     
     override func awakeFromNib() {
         accountName.textColor = Colour.AccentColour
+        layer.cornerRadius = 20
+//        layer.backgroundColor = CGColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1)
+        layer.backgroundColor = Colour.GreyColour?.cgColor
     }
 
 }

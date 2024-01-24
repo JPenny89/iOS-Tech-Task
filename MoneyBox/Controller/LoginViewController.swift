@@ -10,8 +10,6 @@ import Networking
 
 class LoginViewController: UIViewController {
     
-//    private var viewModel = LoginViewModel(dataProvider: DataProvider())
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -22,9 +20,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
-        
-        
-//        viewModel.login()
         
         guard let email = emailTextField.text,
               !email.isEmpty else {

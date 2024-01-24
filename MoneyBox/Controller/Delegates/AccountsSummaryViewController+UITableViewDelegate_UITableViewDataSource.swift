@@ -33,5 +33,6 @@ extension AccountsSummaryViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ accountsSummaryTableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let product = products[indexPath.row]
         performSegue(withIdentifier: "goToAccount", sender: product)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
