@@ -281,62 +281,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r6C-zy-3zU">
-                                <rect key="frame" x="33" y="121" width="340" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="XkU-Yb-oai">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jV-xB-kFF" userLabel="Account Name">
-                                        <rect key="frame" x="20" y="20" width="300" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ1-Ax-927" userLabel="Plan Value">
-                                        <rect key="frame" x="20" y="80" width="300" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzY-5P-xEx" userLabel="Moneybox Value">
-                                        <rect key="frame" x="20" y="146" width="300" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6C-zy-3zU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="429"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cd4-Ul-s9S">
+                                                <rect key="frame" x="35" y="70" width="344" height="289"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jV-xB-kFF" userLabel="Account Name">
+                                                        <rect key="frame" x="20" y="40" width="304" height="24"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ1-Ax-927" userLabel="Plan Value">
+                                                        <rect key="frame" x="20" y="134.5" width="304" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzY-5P-xEx" userLabel="Moneybox Value">
+                                                        <rect key="frame" x="20" y="228.5" width="304" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="zzY-5P-xEx" secondAttribute="bottom" constant="40" id="AIF-yi-GTb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4jV-xB-kFF" secondAttribute="trailing" constant="20" id="Gyh-ju-jK0"/>
+                                                    <constraint firstItem="4jV-xB-kFF" firstAttribute="leading" secondItem="Cd4-Ul-s9S" secondAttribute="leading" constant="20" id="Q2G-rV-z7r"/>
+                                                    <constraint firstItem="4jV-xB-kFF" firstAttribute="top" secondItem="Cd4-Ul-s9S" secondAttribute="top" constant="40" id="QaD-qw-fGz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zzY-5P-xEx" secondAttribute="trailing" constant="20" id="Rrb-L4-R9O"/>
+                                                    <constraint firstItem="lQ1-Ax-927" firstAttribute="leading" secondItem="Cd4-Ul-s9S" secondAttribute="leading" constant="20" id="dBX-aj-Y2f"/>
+                                                    <constraint firstItem="zzY-5P-xEx" firstAttribute="leading" secondItem="Cd4-Ul-s9S" secondAttribute="leading" constant="20" id="fTs-aZ-azn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lQ1-Ax-927" secondAttribute="trailing" constant="20" id="juT-Aw-Qsm"/>
+                                                    <constraint firstItem="lQ1-Ax-927" firstAttribute="centerY" secondItem="Cd4-Ul-s9S" secondAttribute="centerY" id="oM5-0N-Epn"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Cd4-Ul-s9S" firstAttribute="leading" secondItem="r6C-zy-3zU" secondAttribute="leading" constant="35" id="4Eu-Yd-fZK"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cd4-Ul-s9S" secondAttribute="bottom" constant="70" id="4Vu-Md-X5X"/>
+                                            <constraint firstItem="Cd4-Ul-s9S" firstAttribute="top" secondItem="r6C-zy-3zU" secondAttribute="top" constant="70" id="Mg3-If-tES"/>
+                                            <constraint firstItem="Cd4-Ul-s9S" firstAttribute="centerY" secondItem="r6C-zy-3zU" secondAttribute="centerY" id="fOZ-Ro-CWI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cd4-Ul-s9S" secondAttribute="trailing" constant="35" id="iRz-Dl-JuA"/>
+                                            <constraint firstItem="Cd4-Ul-s9S" firstAttribute="centerX" secondItem="r6C-zy-3zU" secondAttribute="centerX" id="n7g-Lc-zKs"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8t-Vc-Mcl" userLabel="Button View">
+                                        <rect key="frame" x="0.0" y="457" width="414" height="429"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig2-5r-89u">
+                                                <rect key="frame" x="60" y="197.5" width="294" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Add £10">
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="increaseBalance:" destination="fCl-yO-qk2" eventType="touchUpInside" id="pyI-0J-OzW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-pb-2ca">
+                                                <rect key="frame" x="161" y="312" width="92.5" height="38"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Dismiss">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="dismissView:" destination="fCl-yO-qk2" eventType="touchUpInside" id="jcZ-g1-Avz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ig2-5r-89u" firstAttribute="leading" secondItem="x8t-Vc-Mcl" secondAttribute="leading" constant="60" id="2rd-af-hNa"/>
+                                            <constraint firstAttribute="trailing" secondItem="ig2-5r-89u" secondAttribute="trailing" constant="60" id="5d0-MU-NR7"/>
+                                            <constraint firstItem="w0g-pb-2ca" firstAttribute="centerX" secondItem="x8t-Vc-Mcl" secondAttribute="centerX" id="MVn-fu-Fge"/>
+                                            <constraint firstItem="w0g-pb-2ca" firstAttribute="top" secondItem="ig2-5r-89u" secondAttribute="bottom" constant="80" id="Odo-2Q-8ae"/>
+                                            <constraint firstItem="ig2-5r-89u" firstAttribute="centerX" secondItem="x8t-Vc-Mcl" secondAttribute="centerX" id="dFM-TQ-sNP"/>
+                                            <constraint firstItem="ig2-5r-89u" firstAttribute="centerY" secondItem="x8t-Vc-Mcl" secondAttribute="centerY" id="gUs-Tx-Lgh"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-pb-2ca">
-                                <rect key="frame" x="163" y="698" width="93" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Dismiss">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="dismissView:" destination="fCl-yO-qk2" eventType="touchUpInside" id="jcZ-g1-Avz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig2-5r-89u">
-                                <rect key="frame" x="78" y="426" width="250" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Add £10">
-                                    <color key="baseBackgroundColor" name="AccentColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="increaseBalance:" destination="fCl-yO-qk2" eventType="touchUpInside" id="pyI-0J-OzW"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hhp-mZ-uvK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XkU-Yb-oai" firstAttribute="top" secondItem="hhp-mZ-uvK" secondAttribute="top" id="BZI-6F-zXZ"/>
+                            <constraint firstItem="XkU-Yb-oai" firstAttribute="trailing" secondItem="hhp-mZ-uvK" secondAttribute="trailing" id="WHL-QG-sob"/>
+                            <constraint firstItem="XkU-Yb-oai" firstAttribute="leading" secondItem="hhp-mZ-uvK" secondAttribute="leading" id="Xk6-JD-FSO"/>
+                            <constraint firstItem="XkU-Yb-oai" firstAttribute="bottom" secondItem="hhp-mZ-uvK" secondAttribute="bottom" id="cuM-2m-AGJ"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="UIView" destination="r6C-zy-3zU" id="nEn-hw-QIO"/>
+                        <outlet property="accountDetailsView" destination="Cd4-Ul-s9S" id="HqB-5y-vqL"/>
                         <outlet property="accountNameLabel" destination="4jV-xB-kFF" id="I8B-2s-twf"/>
                         <outlet property="moneyboxValueLabel" destination="zzY-5P-xEx" id="JPM-c8-GXe"/>
                         <outlet property="planValueLabel" destination="lQ1-Ax-927" id="AIc-Zw-ILR"/>
@@ -344,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5t-Rg-zwj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3657" y="13"/>
+            <point key="canvasLocation" x="3656.521739130435" y="12.723214285714285"/>
         </scene>
     </scenes>
     <resources>
