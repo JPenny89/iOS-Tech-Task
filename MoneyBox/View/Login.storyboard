@@ -347,10 +347,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-pb-2ca">
-                                                <rect key="frame" x="161" y="312" width="92.5" height="38"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Dismiss">
+                                                <rect key="frame" x="60" y="262" width="294" height="38"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Dismiss"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Dismiss">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="dismissView:" destination="fCl-yO-qk2" eventType="touchUpInside" id="jcZ-g1-Avz"/>
@@ -361,10 +365,12 @@
                                         <constraints>
                                             <constraint firstItem="ig2-5r-89u" firstAttribute="leading" secondItem="x8t-Vc-Mcl" secondAttribute="leading" constant="60" id="2rd-af-hNa"/>
                                             <constraint firstAttribute="trailing" secondItem="ig2-5r-89u" secondAttribute="trailing" constant="60" id="5d0-MU-NR7"/>
+                                            <constraint firstItem="w0g-pb-2ca" firstAttribute="leading" secondItem="x8t-Vc-Mcl" secondAttribute="leading" constant="60" id="Lqv-lc-3rQ"/>
                                             <constraint firstItem="w0g-pb-2ca" firstAttribute="centerX" secondItem="x8t-Vc-Mcl" secondAttribute="centerX" id="MVn-fu-Fge"/>
-                                            <constraint firstItem="w0g-pb-2ca" firstAttribute="top" secondItem="ig2-5r-89u" secondAttribute="bottom" constant="80" id="Odo-2Q-8ae"/>
+                                            <constraint firstItem="w0g-pb-2ca" firstAttribute="top" secondItem="ig2-5r-89u" secondAttribute="bottom" constant="30" id="Odo-2Q-8ae"/>
                                             <constraint firstItem="ig2-5r-89u" firstAttribute="centerX" secondItem="x8t-Vc-Mcl" secondAttribute="centerX" id="dFM-TQ-sNP"/>
                                             <constraint firstItem="ig2-5r-89u" firstAttribute="centerY" secondItem="x8t-Vc-Mcl" secondAttribute="centerY" id="gUs-Tx-Lgh"/>
+                                            <constraint firstAttribute="trailing" secondItem="w0g-pb-2ca" secondAttribute="trailing" constant="60" id="tex-Mv-93n"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -382,6 +388,7 @@
                     <connections>
                         <outlet property="accountDetailsView" destination="Cd4-Ul-s9S" id="HqB-5y-vqL"/>
                         <outlet property="accountNameLabel" destination="4jV-xB-kFF" id="I8B-2s-twf"/>
+                        <outlet property="dismissButton" destination="w0g-pb-2ca" id="FUX-qM-Tag"/>
                         <outlet property="moneyboxValueLabel" destination="zzY-5P-xEx" id="JPM-c8-GXe"/>
                         <outlet property="planValueLabel" destination="lQ1-Ax-927" id="AIc-Zw-ILR"/>
                     </connections>

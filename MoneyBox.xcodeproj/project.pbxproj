@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631B02C22B61AD41002B4000 /* LoginViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631B02C12B61AD41002B4000 /* LoginViewController+UITextFieldDelegate.swift */; };
 		632C2CD72B5AC06400549018 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C2CD62B5AC06400549018 /* AccountTableViewCell.swift */; };
 		632F90D62B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F90D52B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift */; };
 		632F90D82B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F90D72B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		631B02C12B61AD41002B4000 /* LoginViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 		632C2CD62B5AC06400549018 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		632F90D52B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		632F90D72B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				632F90D52B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift */,
 				632F90D72B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift */,
+				631B02C12B61AD41002B4000 /* LoginViewController+UITextFieldDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				632C2CD72B5AC06400549018 /* AccountTableViewCell.swift in Sources */,
 				63B53DBF2B5848A400886BF3 /* AccountTableViewCellController.swift in Sources */,
 				63B53DBD2B58489400886BF3 /* AccountDetailsViewController.swift in Sources */,
+				631B02C22B61AD41002B4000 /* LoginViewController+UITextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,8 +24,6 @@ class AccountsSummaryViewController: UIViewController {
         fetchAccounts()
         tableView.dataSource = self
         tableView.delegate = self
-//        tableView.layer.borderWidth = 1
-//        tableView.layer.borderColor = CGColor.init(red: 0.343, green: 0.750, blue: 0.710, alpha: 1)
         greetingLabel.textColor = Colour.AccentColour
         tableView.backgroundColor = .clear
         

@@ -18,6 +18,7 @@ class AccountDetailsViewController: UIViewController {
     @IBOutlet weak var planValueLabel: UILabel!
     @IBOutlet weak var moneyboxValueLabel: UILabel!
     @IBOutlet weak var accountDetailsView: UIView!
+    @IBOutlet weak var dismissButton: UIButton!
     
     var product: ProductResponse?
     let dataProvider = DataProvider()
@@ -31,6 +32,12 @@ class AccountDetailsViewController: UIViewController {
         super.viewDidLoad()
         accountDetailsView.backgroundColor = Colour.GreyColour
         accountNameLabel.textColor = Colour.AccentColour
+        accountDetailsView.layer.cornerRadius = 20
+//        dismissButton.titleLabel?.textColor = Colour.AccentColour
+        dismissButton.layer.borderColor = Colour.AccentColour?.cgColor
+        dismissButton.layer.borderWidth = 1
+        dismissButton.layer.cornerRadius = 5
+//        dismissButton.backgroundColor = .white
         
         guard let product = product else { return }
         accountNameLabel.text = product.product?.friendlyName
