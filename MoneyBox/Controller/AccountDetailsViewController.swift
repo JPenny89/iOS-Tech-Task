@@ -33,11 +33,9 @@ class AccountDetailsViewController: UIViewController {
         accountDetailsView.backgroundColor = Colour.GreyColour
         accountNameLabel.textColor = Colour.AccentColour
         accountDetailsView.layer.cornerRadius = 20
-//        dismissButton.titleLabel?.textColor = Colour.AccentColour
         dismissButton.layer.borderColor = Colour.AccentColour?.cgColor
         dismissButton.layer.borderWidth = 1
         dismissButton.layer.cornerRadius = 5
-//        dismissButton.backgroundColor = .white
         
         guard let product = product else { return }
         accountNameLabel.text = product.product?.friendlyName
@@ -83,7 +81,7 @@ class AccountDetailsViewController: UIViewController {
     }
     
     private func failedAddingMoney() {
-        // handle error
+        displayAlert(title: "Unable to increase balance", message: "Please try again later")
     }
     
     @IBAction func increaseBalance(_ sender: UIButton) {

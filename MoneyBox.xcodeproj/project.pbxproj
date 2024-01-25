@@ -11,6 +11,7 @@
 		632C2CD72B5AC06400549018 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C2CD62B5AC06400549018 /* AccountTableViewCell.swift */; };
 		632F90D62B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F90D52B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift */; };
 		632F90D82B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F90D72B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift */; };
+		6333F55C2B62BEB3002B6C38 /* displayAlert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333F55B2B62BEB3002B6C38 /* displayAlert+UIViewController.swift */; };
 		63B53DBB2B58476B00886BF3 /* AccountsSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBA2B58476B00886BF3 /* AccountsSummaryViewController.swift */; };
 		63B53DBD2B58489400886BF3 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBC2B58489400886BF3 /* AccountDetailsViewController.swift */; };
 		63B53DBF2B5848A400886BF3 /* AccountTableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53DBE2B5848A400886BF3 /* AccountTableViewCellController.swift */; };
@@ -42,6 +43,7 @@
 		632C2CD62B5AC06400549018 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		632F90D52B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		632F90D72B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		6333F55B2B62BEB3002B6C38 /* displayAlert+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "displayAlert+UIViewController.swift"; sourceTree = "<group>"; };
 		63B53DBA2B58476B00886BF3 /* AccountsSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsSummaryViewController.swift; sourceTree = "<group>"; };
 		63B53DBC2B58489400886BF3 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		63B53DBE2B5848A400886BF3 /* AccountTableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCellController.swift; sourceTree = "<group>"; };
@@ -80,14 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		632F90D42B60660400A4C2A8 /* Delegates */ = {
+		632F90D42B60660400A4C2A8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				632F90D52B60668200A4C2A8 /* AccountsSummaryViewController+AccountDetailsViewControllerDelegate.swift */,
 				632F90D72B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift */,
 				631B02C12B61AD41002B4000 /* LoginViewController+UITextFieldDelegate.swift */,
+				6333F55B2B62BEB3002B6C38 /* displayAlert+UIViewController.swift */,
 			);
-			path = Delegates;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		63B53DB62B58469C00886BF3 /* Model */ = {
@@ -112,7 +115,6 @@
 		63B53DB82B5846AB00886BF3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				632F90D42B60660400A4C2A8 /* Delegates */,
 				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
 				63B53DBC2B58489400886BF3 /* AccountDetailsViewController.swift */,
 				63B53DBA2B58476B00886BF3 /* AccountsSummaryViewController.swift */,
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				63B53DB82B5846AB00886BF3 /* Controller */,
+				632F90D42B60660400A4C2A8 /* Extensions */,
 				63B53DB62B58469C00886BF3 /* Model */,
 				63B53DB72B5846A400886BF3 /* View */,
 				B2CA46D42793508A0041B3A5 /* Assets.xcassets */,
@@ -299,6 +302,7 @@
 				63B53DBB2B58476B00886BF3 /* AccountsSummaryViewController.swift in Sources */,
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
 				632F90D82B60670700A4C2A8 /* AccountsSummaryViewController+UITableViewDelegate_UITableViewDataSource.swift in Sources */,
+				6333F55C2B62BEB3002B6C38 /* displayAlert+UIViewController.swift in Sources */,
 				63B53DC12B584E1900886BF3 /* User.swift in Sources */,
 				63FCBD642B612E82003045E4 /* Colour.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,

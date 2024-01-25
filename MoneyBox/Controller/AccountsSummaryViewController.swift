@@ -54,7 +54,7 @@ class AccountsSummaryViewController: UIViewController {
     }
     
     private func failedToFetchAccounts() {
-        // handle error
+        displayAlert(title: "Unable to fetch account data", message: "Please try again later")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -23,12 +23,12 @@ class LoginViewController: UIViewController {
         
         guard let email = emailTextField.text,
               !email.isEmpty else {
-            //            display an error alert
+            displayAlert(title: "Invalid Email", message: "Email field cannot be empty")
             return
         }
         guard let password = passwordTextField.text,
               !password.isEmpty else {
-            //            display an error alert
+            displayAlert(title: "Invalid Password", message: "Password field cannot be empty")
             return
         }
         
@@ -51,7 +51,7 @@ class LoginViewController: UIViewController {
             case .failure(let failure):
                 let errorMessage = failure.localizedDescription
                 DispatchQueue.main.async {
-                    //            display an error alert
+                    response.displayAlert(title: "Login Failed", message: "Unable to log in at this time")
                 }
             }
         }
