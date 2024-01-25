@@ -180,21 +180,21 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="117"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-DX-8kd" userLabel="Account Name">
-                                                            <rect key="frame" x="20" y="8.5" width="344" height="24"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-DX-8kd" userLabel="Account Name">
+                                                            <rect key="frame" x="20" y="8.5" width="364" height="24"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7c2-dC-Cyn" userLabel="Plan Value">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7c2-dC-Cyn" userLabel="Plan Value">
                                                             <rect key="frame" x="20" y="48.5" width="41.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYZ-FK-rpe" userLabel="Moneybox Value">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYZ-FK-rpe" userLabel="Moneybox Value">
                                                             <rect key="frame" x="20" y="85" width="344" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -203,16 +203,16 @@
                                                         </imageView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="tYZ-FK-rpe" firstAttribute="leading" secondItem="lSZ-rt-i5Q" secondAttribute="leadingMargin" id="7zF-Pk-KpU"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="cnf-DX-8kd" secondAttribute="trailing" constant="30" id="AEF-4W-vhQ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="xjD-P0-Ivb" secondAttribute="trailing" constant="15" id="Eho-RM-pA3"/>
-                                                        <constraint firstItem="7c2-dC-Cyn" firstAttribute="leading" secondItem="lSZ-rt-i5Q" secondAttribute="leadingMargin" id="KRA-Wt-0A8"/>
-                                                        <constraint firstItem="7c2-dC-Cyn" firstAttribute="top" secondItem="cnf-DX-8kd" secondAttribute="bottom" constant="16" id="ZLC-ga-iFw"/>
-                                                        <constraint firstItem="xjD-P0-Ivb" firstAttribute="centerY" secondItem="lSZ-rt-i5Q" secondAttribute="centerY" id="ZLh-dH-TRJ"/>
-                                                        <constraint firstItem="7c2-dC-Cyn" firstAttribute="centerY" secondItem="lSZ-rt-i5Q" secondAttribute="centerY" id="jys-Vw-Ene"/>
-                                                        <constraint firstItem="tYZ-FK-rpe" firstAttribute="top" secondItem="7c2-dC-Cyn" secondAttribute="bottom" constant="16" id="kSF-nB-y6f"/>
-                                                        <constraint firstItem="cnf-DX-8kd" firstAttribute="leading" secondItem="lSZ-rt-i5Q" secondAttribute="leadingMargin" id="uri-N4-bhs"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="tYZ-FK-rpe" secondAttribute="trailing" constant="30" id="zYs-Wd-bHu"/>
+                                                        <constraint firstItem="tYZ-FK-rpe" firstAttribute="leading" secondItem="lSZ-rt-i5Q" secondAttribute="leadingMargin" id="89U-OD-FuM"/>
+                                                        <constraint firstItem="xjD-P0-Ivb" firstAttribute="centerY" secondItem="lSZ-rt-i5Q" secondAttribute="centerY" id="Qln-qf-jpx"/>
+                                                        <constraint firstItem="7c2-dC-Cyn" firstAttribute="leading" secondItem="lSZ-rt-i5Q" secondAttribute="leadingMargin" id="cAK-vi-dPL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cnf-DX-8kd" secondAttribute="trailing" constant="30" id="dSO-xv-kc2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xjD-P0-Ivb" secondAttribute="trailing" constant="15" id="ekn-ur-pVg"/>
+                                                        <constraint firstItem="tYZ-FK-rpe" firstAttribute="top" secondItem="7c2-dC-Cyn" secondAttribute="bottom" constant="16" id="gCO-6D-Lb3"/>
+                                                        <constraint firstItem="7c2-dC-Cyn" firstAttribute="centerY" secondItem="lSZ-rt-i5Q" secondAttribute="centerY" id="kkN-yP-fUm"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="tYZ-FK-rpe" secondAttribute="trailing" constant="30" id="q4g-lZ-FQ9"/>
+                                                        <constraint firstItem="7c2-dC-Cyn" firstAttribute="top" secondItem="cnf-DX-8kd" secondAttribute="bottom" constant="16" id="vfJ-Wj-kvl"/>
+                                                        <constraint firstItem="cnf-DX-8kd" firstAttribute="leading" secondItem="lSZ-rt-i5Q" secondAttribute="leadingMargin" id="yQh-8o-n0g"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" name="GreyColor"/>
@@ -276,7 +276,7 @@
         <!--AccountDetailsView-->
         <scene sceneID="HsA-LD-ubv">
             <objects>
-                <viewController title="AccountDetailsView" id="fCl-yO-qk2" customClass="AccountDetailsViewController" customModule="MoneyBox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountDetailsView" title="AccountDetailsView" id="fCl-yO-qk2" customClass="AccountDetailsViewController" customModule="MoneyBox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iFW-YU-mRz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

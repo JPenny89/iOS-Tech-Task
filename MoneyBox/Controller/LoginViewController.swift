@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         emailTextField.backgroundColor = Colour.GreyColour
         passwordTextField.backgroundColor = Colour.GreyColour
+        emailTextField.accessibilityLabel = "hello I am an email field"
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
@@ -49,9 +50,9 @@ class LoginViewController: UIViewController {
                     }
                 }
             case .failure(let failure):
-                let errorMessage = failure.localizedDescription
+                let reasonForFailre = failure.localizedDescription
                 DispatchQueue.main.async {
-                    response.displayAlert(title: "Login Failed", message: "Unable to log in at this time")
+                    response.displayAlert(title: "Login Failed", message: "\(reasonForFailre)")
                 }
             }
         }

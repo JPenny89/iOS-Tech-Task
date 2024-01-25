@@ -26,7 +26,6 @@ class AccountsSummaryViewController: UIViewController {
         tableView.delegate = self
         greetingLabel.textColor = Colour.AccentColour
         tableView.backgroundColor = .clear
-        
     }
     
     func fetchAccounts() {
