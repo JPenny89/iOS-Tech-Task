@@ -80,6 +80,7 @@ class AccountDetailsViewController: UIViewController {
                 if let moneybox = success.moneybox {
                     self?.successfullyAdded(moneybox: moneybox)
                     self?.delegate?.accountDetailsViewControllerUpdated((self?.product)!)
+                    self?.displayAlert(title: "Success!", message: "£10 added to your Moneybox")
                 }
             case .failure(let failure):
                 let reasonForFailure = failure.localizedDescription
