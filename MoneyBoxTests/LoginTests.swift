@@ -28,7 +28,7 @@ class LoginViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_Login() {
+    func test_login() {
         let expectatedResult = expectation(description: "Waiting for result")
         let dataProvider = DataProviderMock()
         dataProvider.login(request: LoginRequest(email: "test+ios@moneyboxapp.com", password: "password")) { result in

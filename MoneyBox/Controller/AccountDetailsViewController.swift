@@ -23,6 +23,7 @@ class AccountDetailsViewController: UIViewController {
     var product: ProductResponse?
     let dataProvider = DataProvider()
     weak var delegate: AccountDetailsViewControllerDelegate?
+    var maximumContentSizeCategory: UIContentSizeCategory?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -35,21 +36,26 @@ class AccountDetailsViewController: UIViewController {
         accountDetailsView.layer.cornerRadius = 20
         dismissButton.layer.borderColor = Colour.AccentColour?.cgColor
         dismissButton.layer.borderWidth = 1
-        dismissButton.layer.cornerRadius = 5
+        dismissButton.layer.cornerRadius = 10
         
+        updateUI()
+        
+    }
+    
+    private func updateUI() {
         guard let product = product else { return }
         accountNameLabel.text = product.product?.friendlyName
         if let planValue = product.planValue {
             planValueLabel.text = String(format: "Total Plan Value: £%.2f", planValue)
         }
         else {
-            planValueLabel.text = "Total Plan Value: £0"
+            planValueLabel.text = "Total Plan Value: £0.00"
         }
         if let moneybox = product.moneybox {
             moneyboxValueLabel.text = String(format: "Moneybox: £%.2f", moneybox)
         }
         else {
-            moneyboxValueLabel.text = "Moneybox: £0"
+            moneyboxValueLabel.text = "Moneybox: £0.00"
         }
     }
     
@@ -70,8 +76,11 @@ class AccountDetailsViewController: UIViewController {
                     self?.successfullyAdded(moneybox: moneybox)
                     self?.delegate?.accountDetailsViewControllerUpdated((self?.product)!)
                 }
-            case .failure(_):
-                self?.failedAddingMoney()
+            case .failure(let failure):
+                let reasonForFailure = failure.localizedDescription
+                DispatchQueue.main.async {
+                    self?.displayAlert(title: "Failed to add funds", message: "\(reasonForFailure)")
+                }
             }
         }
     }
@@ -79,11 +88,7 @@ class AccountDetailsViewController: UIViewController {
     private func successfullyAdded(moneybox: Double) {
         moneyboxValueLabel.text = String(format: "Moneybox: £%.2f", moneybox)
     }
-    
-    private func failedAddingMoney() {
-        displayAlert(title: "Unable to increase balance", message: "Please try again later")
-    }
-    
+        
     @IBAction func increaseBalance(_ sender: UIButton) {
         guard let product = product
         else { return }

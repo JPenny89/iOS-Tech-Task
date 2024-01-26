@@ -47,7 +47,7 @@ class ProductDetailViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_petch_products() {
+    func test_fetch_products() {
         let expectatedResult = expectation(description: "Waiting for result")
         dataProvider.fetchProducts() { result in
             switch result {

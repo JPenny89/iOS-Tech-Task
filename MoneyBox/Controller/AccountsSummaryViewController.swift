@@ -39,7 +39,6 @@ class AccountsSummaryViewController: UIViewController {
                 let formattedTotalPlanValue = String(format: "Total Plan Value: £%.2f", self?.planValue ?? 0.0)
                 self?.totalPlanValue.text = formattedTotalPlanValue
                 self?.didFetchAccounts()
-                
             case .failure(_):
                 self?.failedToFetchAccounts()
             }
@@ -75,4 +74,3 @@ class AccountsSummaryViewController: UIViewController {
         }
     }
 }
-
