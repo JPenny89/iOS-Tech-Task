@@ -26,6 +26,9 @@ class AccountsSummaryViewController: UIViewController {
         tableView.delegate = self
         greetingLabel.textColor = Colour.AccentColour
         tableView.backgroundColor = .clear
+        
+        greetingLabel.accessibilityIdentifier = "Hello, \(UserService.shared.user?.forename ?? "")"
+        totalPlanValue.accessibilityIdentifier = String(format: "Plan value is £%.2f", planValue ?? 0.0)
     }
     
     func fetchAccounts() {

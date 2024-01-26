@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         emailTextField.backgroundColor = Colour.GreyColour
         passwordTextField.backgroundColor = Colour.GreyColour
+        emailTextField.accessibilityIdentifier = "Email Field"
+        passwordTextField.accessibilityIdentifier = "Password Field"
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {

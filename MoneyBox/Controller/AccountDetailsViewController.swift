@@ -38,6 +38,11 @@ class AccountDetailsViewController: UIViewController {
         dismissButton.layer.borderWidth = 1
         dismissButton.layer.cornerRadius = 10
         
+        accountNameLabel.accessibilityIdentifier = "\(product?.product?.friendlyName ?? "")"
+        planValueLabel.accessibilityIdentifier = String(format: "Plan value is £%.2f", product?.planValue ?? 0.0)
+        moneyboxValueLabel.accessibilityIdentifier = String(format: "Moneybox value is £%.2f", product?.moneybox ?? 0.0)
+        dismissButton.accessibilityIdentifier = "Dismiss button"
+        
         updateUI()
         
     }
